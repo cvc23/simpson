@@ -13,6 +13,147 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_hermana -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_hermana">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_hermano -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_hermano">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_madre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_madre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_padre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_padre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#su_dueno_es -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#su_dueno_es">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#animal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#trabaja_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#trabaja_en">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Lugar"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#apellido -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#apellido">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#edad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#edad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#nombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Lugar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#animal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#ocupacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#ocupacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#raza -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#raza">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#perro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#sexo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#sexo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#ubicacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#ubicacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Lugar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -30,6 +171,28 @@
     <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#animal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#animal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#gato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#gato">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#perro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#perro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#animal"/>
+    </owl:Class>
 </rdf:RDF>
 
 
