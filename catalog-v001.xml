@@ -1,10 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-<<<<<<< HEAD
-        <uri id="Automatically generated entry, Timestamp=1526355998785" name="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11" uri="ontologysimpson.owl"/>
-=======
-        <uri id="Automatically generated entry, Timestamp=1526347384739" name="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11" uri="ontologysimpson.owl"/>
->>>>>>> 0795caab5468521ab5ae3b99adaca75a48b9a13b
-    </group>
-</catalog>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"/>
