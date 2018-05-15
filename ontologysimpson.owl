@@ -127,6 +127,23 @@
     
 
 
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_nieta_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_nieta_de">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Mujer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_hija_de"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_hija_de"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_hija_de"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_hijo_de"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_nieto_de -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_nieto_de">
