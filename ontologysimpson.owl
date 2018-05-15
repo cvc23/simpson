@@ -93,10 +93,12 @@
     <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_hija_de -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_hija_de">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_madre_de"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_padre_de"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Mujer"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_abuelo_de"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_padre_de"/>
+        </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
@@ -104,8 +106,6 @@
     <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_hijo_de -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_hijo_de">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_madre_de"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_padre_de"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Hombre"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
     </owl:ObjectProperty>
@@ -117,6 +117,23 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_madre_de">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Mujer"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_nieto_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_nieto_de">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Hombre"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_hijo_de"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_hija_de"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_hijo_de"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_hijo_de"/>
+        </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
@@ -268,6 +285,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Hombre">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Mujer"/>
     </owl:Class>
     
 
@@ -327,10 +345,23 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Bart">
         <rdf:type rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Hombre"/>
+        <es_hijo_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Homero"/>
+        <es_hijo_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Marge"/>
         <apellido rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simpson</apellido>
         <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</edad>
         <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bart</nombre>
         <ocupacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estudiante</ocupacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Clancy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Clancy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Hombre"/>
+        <es_padre_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Marge"/>
+        <apellido rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bouvier</apellido>
+        <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clancy</nombre>
     </owl:NamedIndividual>
     
 
@@ -340,6 +371,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Homero">
         <rdf:type rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Hombre"/>
         <es_esposo_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Marge"/>
+        <es_hijo_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Abraham"/>
         <es_padre_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Bart"/>
         <es_padre_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Lisa"/>
         <es_padre_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Maggie"/>
@@ -355,6 +387,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Lisa">
         <rdf:type rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Mujer"/>
+        <es_hija_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Homero"/>
+        <es_hija_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Marge"/>
         <apellido rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simpson</apellido>
         <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8</edad>
         <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lisa</nombre>
@@ -367,6 +401,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Maggie">
         <rdf:type rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Mujer"/>
+        <es_hija_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Homero"/>
+        <es_hija_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Marge"/>
         <apellido rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simpson</apellido>
         <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</edad>
         <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maggie</nombre>
@@ -378,6 +414,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Marge">
         <rdf:type rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Mujer"/>
+        <es_hija_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Clancy"/>
+        <es_hija_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Mona"/>
         <es_madre_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Bart"/>
         <es_madre_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Lisa"/>
         <es_madre_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Maggie"/>
@@ -385,6 +423,17 @@
         <edad rdf:datatype="http://www.w3.org/2001/XMLSchema#string">34</edad>
         <es_mujer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">si</es_mujer>
         <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marge</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Mona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Mona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Mujer"/>
+        <es_madre_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Homero"/>
+        <apellido rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simpson</apellido>
+        <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mona</nombre>
     </owl:NamedIndividual>
 </rdf:RDF>
 
