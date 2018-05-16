@@ -56,6 +56,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_dueno_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_dueno_de">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#su_dueno_es"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Animal"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_esposa_de -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_esposa_de">
@@ -71,6 +81,14 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_esposo_de">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Hombre"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Mujer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_gordo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#es_gordo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
     </owl:ObjectProperty>
     
 
@@ -262,6 +280,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#frase -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#frase">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#nombre -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#nombre">
@@ -386,6 +413,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Abraham">
         <rdf:type rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Hombre"/>
+        <es_abuelo_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Bart"/>
+        <es_abuelo_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Lisa"/>
+        <es_abuelo_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Maggie"/>
         <es_esposo_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Mona"/>
         <es_padre_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Abbie"/>
         <es_padre_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Heberto"/>
@@ -401,6 +431,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Ayudante_de_santa">
         <rdf:type rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Animal"/>
+        <su_dueno_es rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Bart"/>
         <apodo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ayudante de santa</apodo>
     </owl:NamedIndividual>
     
@@ -429,7 +460,6 @@
         <es_esposa_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#hibbert"/>
         <apellido>duppre</apellido>
         <nombre>Bernice</nombre>
-        <raza>negra</raza>
     </owl:NamedIndividual>
     
 
@@ -521,6 +551,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Homero">
         <rdf:type rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Hombre"/>
         <es_esposo_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Marge"/>
+        <es_gordo rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Homero"/>
         <es_hijo_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Abraham"/>
         <es_padre_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Bart"/>
         <es_padre_de rdf:resource="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#Lisa"/>
